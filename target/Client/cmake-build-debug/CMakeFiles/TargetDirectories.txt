@@ -1,0 +1,3 @@
+/home/user/CLionProjects/a000-ocr-service/target/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/user/CLionProjects/a000-ocr-service/target/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/user/CLionProjects/a000-ocr-service/target/Client/cmake-build-debug/CMakeFiles/OCR_service_client.dir

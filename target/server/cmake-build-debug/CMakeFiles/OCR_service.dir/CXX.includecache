@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/CLionProjects/a000-ocr-service/target/server/OcrServiceController.cpp
+OcrServiceController.h
+/home/user/CLionProjects/a000-ocr-service/target/server/OcrServiceController.h
+
+/home/user/CLionProjects/a000-ocr-service/target/server/OcrServiceController.h
+cpprest/http_listener.h
+-
+
