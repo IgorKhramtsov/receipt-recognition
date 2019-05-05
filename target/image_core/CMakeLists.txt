@@ -3,6 +3,7 @@ project(OCR_service)
 
 set(CMAKE_CXX_STANDARD 14)
 #set(OpenCV_FOUND 1)
+SET(OpenCV_DIR /home/crataegus/installation/OpenCV-3.4.4/share/OpenCV/)
 
 include_directories (/usr/local/include)
 include_directories (../../3dparty)

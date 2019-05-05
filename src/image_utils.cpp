@@ -193,7 +193,7 @@ void findTextContours(Mat &in, std::vector<std::vector<Point>> &contours) {
 
     resize(image_resized, image_resized, Size( (float)in.cols / ((float)in.rows / 800.) , 800));
     //imshow("contt", image);
-    imshow("cont", image_resized);
+    imshow("Image contours", image_resized);
 
 
 }
@@ -521,7 +521,7 @@ void recognizeImage(const cv::Mat &img, tesseract::TessBaseAPI *ocr, nlohmann::j
             boost::erase_all(word, "\n");
             rec["data"]["lines"][i]["text"] = word;
             rec["data"]["lines"][i]["conf"] = conf;
-//            printf("ll: %s", rec["data"]["lines"][i]["text"].get<std::string>().c_str());
+            printf("ll: %s", rec["data"]["lines"][i]["text"].get<std::string>().c_str());
 
 
             rectangle(recognizeImage, Point(x1, y1), Point(x2, y2), Scalar(255, 0, 0), 2);
@@ -536,8 +536,8 @@ void recognizeImage(const cv::Mat &img, tesseract::TessBaseAPI *ocr, nlohmann::j
 
     rec["data"]["count"] = i;
 
-//    resize(recognizeImage, recognizeImage, Size( (float)recognizeImage.cols / ((float)recognizeImage.rows / 900.) , 900));
-//    imshow("Recognized", recognizeImage);
+    resize(recognizeImage, recognizeImage, Size( (float)recognizeImage.cols / ((float)recognizeImage.rows / 900.) , 900));
+    imshow("Recognized", recognizeImage);
 }
 
 void deSkew(const cv::Mat &in, cv::Mat &out) {

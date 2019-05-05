@@ -15,19 +15,19 @@ using namespace std;
 tesseract::TessBaseAPI *ocr;
 
 int main( int argc, char ** argv ) {
-    const char *dirname = argc >= 2 ? argv[1] : "../../../sample_images/";
+    const char *dirname = argc >= 2 ? argv[1] : "../../sample_images/";
 
-    namedWindow(windowName_cutted, WINDOW_NORMAL);
-    moveWindow(windowName_cutted, 50, 50);
-    resizeWindow(windowName_cutted, 500, 800);
+    // namedWindow(windowName_cutted, WINDOW_NORMAL);
+    // moveWindow(windowName_cutted, 50, 50);
+    // resizeWindow(windowName_cutted, 500, 800);
 
     namedWindow("Corrected", WINDOW_NORMAL);
     resizeWindow("Corrected", 500, 800);
     moveWindow("Corrected", 50, 80);
 
-    namedWindow("Recognized", WINDOW_NORMAL);
-    resizeWindow("Recognized", 500, 800);
-    moveWindow("Recognized", 50, 80);
+    // namedWindow("Recognized", WINDOW_NORMAL);
+    // resizeWindow("Recognized", 500, 800);
+    // moveWindow("Recognized", 50, 80);
 
     createButton("Recognize", recognize);
 
